@@ -25,6 +25,9 @@ jobs:
         with:
           poetry-version: 2.1.3
 
+      - name: Install dependencies
+        run: poetry install
+
       - name: Run mypy
         run: poetry run mypy basic
 
